@@ -10,7 +10,7 @@
 
 	<groupId>org.springframework.samples</groupId>
 	<artifactId>spring-petclinic-angular1</artifactId>
-	<version>1.6-RELEASE</version>
+	<version>1.7-SNAPSHOT</version>
 	<name>Spring Petclinic :: Parent POM</name>
 	<packaging>pom</packaging>
 
