@@ -10,7 +10,7 @@
 
 	<groupId>org.springframework.samples</groupId>
 	<artifactId>spring-petclinic-angular1</artifactId>
-	<version>1.6-SNAPSHOT</version>
+	<version>1.5.1</version>
 	<name>Spring Petclinic :: Parent POM</name>
 	<packaging>pom</packaging>
 
@@ -73,27 +73,16 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
 				<version>3.2</version>
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<phase>package</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>sonar</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>sonar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
-	
-	<distributionManagement>
-	  <repository>
-	    <id>nexus</id>
-	    <url>http://localhost:8082/repository/maven-releases/</url>
-	  </repository>
-	  <snapshotRepository>
-	    <id>nexus</id>
-	    <url>http://localhost:8082/repository/maven-snapshots/</url>
-	  </snapshotRepository>
-	</distributionManagement>
 
 </project>
