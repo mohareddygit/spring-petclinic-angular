@@ -16,7 +16,7 @@ node {
 
 stage "Analyze"
 node {
-	mvn "verify"
+	mvn "verify -Dsonar.skip"
 }
 
 //stage "Publish to Nexus"
