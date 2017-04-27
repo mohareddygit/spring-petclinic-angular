@@ -1,5 +1,5 @@
 stage "Compile"
 
 node {
-	mvn compile
+	sh 'mvn compile'
 }
