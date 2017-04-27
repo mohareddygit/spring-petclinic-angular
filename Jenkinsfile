@@ -1,5 +1,5 @@
-stage "Coucou"
+stage "Compile"
 
 node {
-	print 'Coucou'
+	mvn compile
 }
