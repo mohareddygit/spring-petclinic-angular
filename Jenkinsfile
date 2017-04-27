@@ -20,7 +20,7 @@ node {
 	junit "**/target/surefire-reports/*.xml"
 }
 
-//stage "Publish to Nexus"
-//node {
-//	mvn "deploy:deploy"
-//}
+stage "Publish to Nexus"
+node {
+	mvn "deploy:deploy"
+}
