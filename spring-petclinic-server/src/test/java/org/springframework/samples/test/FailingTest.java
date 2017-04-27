@@ -1,12 +1,12 @@
 package org.springframework.samples.test;
 
-import static org.junit.Assert.assertTrue;
-
+import org.junit.Assume;
 import org.junit.Test;
 
 public class FailingTest {
 	@Test
 	public void failingTest() {
-		assertTrue(true);
+		Assume.assumeTrue(false);
+		//assertTrue(true);
 	}
 }
