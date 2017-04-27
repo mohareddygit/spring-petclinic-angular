@@ -1,3 +1,9 @@
+stage "Checkout"
+
+node {
+	checkout scm
+}
+
 stage "Compile"
 
 node {
