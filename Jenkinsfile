@@ -17,6 +17,7 @@ node {
 stage "Analyze"
 node {
 	mvn "verify -Dsonar.skip"
+	junit "**/target/surefire-reports/*.xml"
 }
 
 //stage "Publish to Nexus"
