@@ -33,6 +33,7 @@
                 <executions>
 					<execution>
 						<id>npm install</id>
+						<phase>generate-resources</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -43,6 +44,7 @@
 					</execution>
 					<execution>
 						<id>bower install</id>
+						<phase>generate-resources</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -53,12 +55,12 @@
 					</execution>
 					<execution>
 						<id>gulp build</id>
+						<phase>generate-resources</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
 						<configuration>
 							<executable>gulp</executable>
-							<arguments>build</arguments>
 						</configuration>
 						
 					</execution>
