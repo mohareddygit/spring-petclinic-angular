@@ -1,5 +1,7 @@
 stage "Compile"
 
 node {
-	sh 'mvn compile'
+	def mvnPath = tool 'M3'
+	print mvnPath
+	//sh 'mvn compile'
 }
