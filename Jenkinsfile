@@ -16,7 +16,7 @@ node {
 
 stage "Analyze"
 node {
-	mvn "verify -Dsonar.skip"
+	mvn "verify"
 	junit "**/target/surefire-reports/*.xml"
 }
 
