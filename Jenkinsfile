@@ -1,1 +1,5 @@
-print 'Coucou'
+stage "Coucou"
+
+node {
+	print 'Coucou'
+}
