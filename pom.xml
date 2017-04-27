@@ -109,4 +109,13 @@
 		</snapshotRepository>
 	</distributionManagement>
 
+	<profiles>
+		<profile>
+			<id>deploy</id>
+			<properties>
+				<skipTests>true</skipTests>
+				<sonar.skip>true</sonar.skip>
+			</properties>
+		</profile>
+	</profiles>
 </project>

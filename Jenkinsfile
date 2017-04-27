@@ -22,5 +22,5 @@ node {
 
 stage "Publish to Nexus"
 node {
-	mvn "deploy:deploy"
+	mvn "deploy -DskipTests -Dsonar.skip"
 }
